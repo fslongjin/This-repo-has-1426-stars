@@ -9,3 +9,7 @@ As the repo's name says, the repo has N stars. The name of this repo will be upd
 &nbsp;
 
 Get contact with me: longjin@ringotek.cn
+&nbsp;
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=fslongjin/This-repo-has-3-stars&type=Date)](https://star-history.com/#fslongjin/This-repo-has-3-stars&Date)
