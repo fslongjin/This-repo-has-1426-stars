@@ -16,7 +16,7 @@ repo_url = "https://api.github.com/repos/fslongjin/This-project-has-N-stars"
 regex_pattern = re.compile(r'This-repo-has-(\d+)?-stars')
 headers = {
     "Accept": "application/vnd.github.v3+json",
-    "Authorization": "token " + github_token
+    "Authorization": "token " + github_token,
 }
 
 
