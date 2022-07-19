@@ -25,7 +25,7 @@ Implement this function in various programming languages.
 
 - [ ] C++
 
-- [ ] Go
+- [x] Go
 
 - [ ] Java
 
