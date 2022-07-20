@@ -35,4 +35,6 @@ Implement this function in various programming languages.
 
 - [x] Python
 
+- [x] Rust
+
 - [ ] etc...
