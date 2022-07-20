@@ -27,7 +27,7 @@ Implement this function in various programming languages.
 
 - [x] Go
 
-- [ ] Java
+- [x] Java
 
 - [ ] Javascript
 
