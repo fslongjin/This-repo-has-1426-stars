@@ -1,0 +1,5 @@
+{
+  "tasks": {
+    "start": "deno run --allow-env=GITHUB_TOKEN,NODE_DEBUG --allow-net=api.github.com index.ts"
+  }
+}
