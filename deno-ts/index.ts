@@ -20,6 +20,11 @@ const repoInfo = {
 };
 
 /**
+ * The refresh interval in ms.
+ */
+const refreshInterval = 3000;
+
+/**
  * Get the current stars of this repository.
  */
 async function getStars() {
@@ -50,20 +55,32 @@ async function getTokenScope() {
 }
 
 async function main() {
+  let previousStar: number | null = null;
+
   log.debug(`GitHub Token used: ${patToken?.slice(0, 12)}…`);
 
   const scope = await getTokenScope();
   log.debug(`Token scope: ${scope}`);
 
-  const stars = await getStars();
-  log.info(`This repo has ${stars} stars currently.`);
+  // FIXME: change to webhook instead of polling for better performance.
+  setInterval(async () => {
+    const stars = await getStars();
+    log.info(`This repo has ${stars} stars currently.`);
 
-  const response = await updateToStars(stars);
-  if (response.status === 200) {
-    log.info(`Update stars to ${stars} success.`);
-  } else {
-    log.error(`Update stars to ${stars} failed.`);
-  }
+    if (previousStar !== stars) {
+      const response = await updateToStars(stars);
+      if (response.status === 200) {
+        log.info(`Update stars to ${stars} success.`);
+      } else {
+        log.error(`Update stars to ${stars} failed.`);
+      }
+    } else {
+      log.debug("No stars changes. Ignoring");
+    }
+
+    log.debug(`Will check again in ${refreshInterval} seconds.`);
+    previousStar = stars;
+  }, refreshInterval);
 }
 
 main();
