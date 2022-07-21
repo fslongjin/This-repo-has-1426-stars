@@ -30,7 +30,7 @@ Implement this function in various programming languages.
 - [x] Java
 
 - [X] JavaScript
-
+  - [X] TypeScript
   - [X] with Deno
 
 - [x] Python
