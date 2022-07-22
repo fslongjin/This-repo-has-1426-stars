@@ -49,7 +49,7 @@ webhooks.on('star', ({ payload: { repository } }) => {
   createServer(createNodeMiddleware(webhooks))
     .on('error', console.error)
     .on('close', () => console.log('Server closed'))
-    .listen(PORT, async () => console.log(`Server running on port ${PORT}`));
+    .listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
   if (ACTING_URL) {
     const source = new EventSource(ACTING_URL);
