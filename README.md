@@ -29,12 +29,14 @@ Implement this function in various programming languages.
 
 - [x] Java
 
-- [X] JavaScript
-
-  - [X] with Deno
+- [x] JavaScript
+  
+  - [x] with Deno
 
 - [x] Python
 
 - [x] Rust
+
+- [x] Swift
 
 - [ ] etc...
