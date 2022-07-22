@@ -1,6 +1,6 @@
-# typescript
+# python-webhook
 
-This-repo-has-N-stars typescript version.
+This-repo-has-N-stars python-webhook version.
 
 ## Environment
 
