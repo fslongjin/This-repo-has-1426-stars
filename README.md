@@ -33,8 +33,11 @@ Implement this function in various programming languages.
   - [X] TypeScript
   - [X] with Deno
 
+
 - [x] Python
 
 - [x] Rust
+
+- [x] Swift
 
 - [ ] etc...
