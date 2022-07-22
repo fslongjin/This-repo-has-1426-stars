@@ -1,0 +1,18 @@
+{
+  "python.linting.enabled": true,
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8CategorySeverity.E": "Error",
+  "python.linting.flake8CategorySeverity.F": "Error",
+  "python.linting.flake8CategorySeverity.W": "Warning",
+  "python.linting.flake8Path": "flake8",
+  "python.linting.flake8Args": [
+    "--config=.flake8"
+  ],
+  "python.analysis.typeCheckingMode": "off",
+  "python.analysis.diagnosticMode": "workspace",
+  "python.formatting.provider": "black",
+  "editor.formatOnSave": true,
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportMissingModuleSource": "none"
+  }
+}
