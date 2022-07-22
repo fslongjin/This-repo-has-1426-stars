@@ -12,6 +12,10 @@ This-repo-has-N-stars typescript version.
 | __PORT__           | Websocket Port                                   | Optional @default: 3000 |
 | __ACTING_URL__     | Websocket Acting Url [smee.io](https://smee.io/) | Optional                |
 
+## Settings
+
+create a new webhook in [settings hooks](/settings/hooks)
+
 ## Start
 
 command:
