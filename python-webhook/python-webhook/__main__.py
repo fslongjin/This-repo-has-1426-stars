@@ -18,7 +18,7 @@ log = init_logging("DEBUG")
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN", None)
 WEBHOOK_SECRET = os.getenv("WEBHOOK_SECRET", None)
 REPO_URL = os.getenv("REPO_URL", None)
-PORT = os.getenv("PORT", 5000)
+PORT = os.getenv("PORT", 3000)
 
 REPO_INFO = re.search(
     r"github\.com/(?P<owner>[^/]+)/(?P<repo>[^/]+)",
