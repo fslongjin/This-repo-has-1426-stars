@@ -29,9 +29,10 @@ Implement this function in various programming languages.
 
 - [x] Java
 
-- [x] JavaScript
-  
-  - [x] with Deno
+- [X] JavaScript
+  - [X] TypeScript
+  - [X] with Deno
+
 
 - [x] Python
 
