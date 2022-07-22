@@ -18,6 +18,7 @@ log = init_logging("DEBUG")
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN", None)
 WEBHOOK_SECRET = os.getenv("WEBHOOK_SECRET", None)
 REPO_URL = os.getenv("REPO_URL", None)
+PORT = os.getenv("PORT", 5000)
 
 REPO_INFO = re.search(
     r"github\.com/(?P<owner>[^/]+)/(?P<repo>[^/]+)",
@@ -92,4 +93,4 @@ if __name__ == "__main__":
     data = requests.get(API_REPO_URL)
     edit_repo(data.json()["stargazers_count"])
 
-    app.run()
+    app.run(port=PORT)
