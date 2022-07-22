@@ -11,13 +11,12 @@ func getDictionaryFromJSONString(jsonString:String) ->NSDictionary{
     }
     return NSDictionary()
 }
-func jsonToData(jsonDic:Dictionary<String, Any>) -> Data? {
 
+func jsonToData(jsonDic:Dictionary<String, Any>) -> Data? {
     if (!JSONSerialization.isValidJSONObject(jsonDic)) {
         print("is not a valid json object")
         return nil
     }
-
     //利用自带的json库转换成Data
     //如果设置options为JSONSerialization.WritingOptions.prettyPrinted，则打印格式更好阅读
     let data = try? JSONSerialization.data(withJSONObject: jsonDic, options: [])
@@ -52,7 +51,7 @@ func getStart() {
 func updateProjectName(name:String, stars:Int) {
     let array = name.components(separatedBy:"-")
     let currentStars:String = array[array.count - 2];
-    if (Int(currentStars) != stars - 100) {
+    if (Int(currentStars) != stars) {
         let newName = "This-repo-has-\(stars)-stars"
         let newData:[String: String] = [
             "name": newName,
