@@ -25,19 +25,20 @@ Implement this function in various programming languages.
 
 - [ ] C++
 
-- [x] Go
+- [x] [Go](./go/)
 
-- [x] Java
+- [x] [Java](./java/)
 
 - [X] JavaScript
-  - [X] TypeScript
-  - [X] with Deno
-
+  - [X] [TypeScript](./typescript/)
+  - [X] [with Deno](./deno-ts/)
 
 - [x] Python
+  - [x] [python](./python/)
+  - [x] [python-webhook](./python-webhook/)
 
-- [x] Rust
+- [x] [Rust](./rust/)
 
-- [x] Swift
+- [x] [Swift](./Swift/)
 
 - [ ] etc...

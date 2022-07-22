@@ -1,0 +1,15 @@
+[flake8]
+max-line-length = 88
+exclude =
+   .git,
+   __pycache__
+per-file-ignores=
+   __init__.py:F403,F401
+ignore =
+   # black formats error
+   W503,
+   F722,
+   # -----
+   F821,
+   # do not use bare 'except'flake8(E722)
+   E722
