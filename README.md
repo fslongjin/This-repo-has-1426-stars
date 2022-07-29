@@ -23,6 +23,8 @@ Implement this function in various programming languages.
 
 - [ ] C
 
+- [x] [C#](./c#/)
+
 - [ ] C++
 
 - [x] [Go](./go/)
@@ -41,6 +43,5 @@ Implement this function in various programming languages.
 
 - [x] [Swift](./Swift/)
 
-- [x] [C#](./c#/)
 
 - [ ] etc...
