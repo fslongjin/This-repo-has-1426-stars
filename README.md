@@ -23,7 +23,7 @@ Implement this function in various programming languages.
 
 - [ ] C
 
-- [x] [C#](./c#/)
+- [x] [C#](./c-sharp/)
 
 - [ ] C++
 
