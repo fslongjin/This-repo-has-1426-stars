@@ -23,6 +23,9 @@ Implement this function in various programming languages.
 
 - [ ] C
 
+
+- [x] [C#](./c-sharp/)
+
 - [ ] C++
 
 - [x] [Go](./go/)
