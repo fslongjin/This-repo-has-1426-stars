@@ -44,4 +44,6 @@ Implement this function in various programming languages.
 
 - [x] [Swift](./Swift/)
 
+- [x] [Ruby](./Ruby/)
+
 - [ ] etc...
