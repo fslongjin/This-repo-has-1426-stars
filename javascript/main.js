@@ -19,7 +19,6 @@ const reNameRepo = async (data) => {
         repo_id: process.env.repo_id,
         ...data,
     });
-    console.log(req.data.name);
 };
 
 const checkStar = async (star)=> {
@@ -28,15 +27,8 @@ const checkStar = async (star)=> {
     });
     const repo_name = rep.data.name;
     const data = {
-        name: `This-repo-gets-${star}-star`,
-        description: `My repo has ${star} stars...(这个仓库现在只有${star}颗星星)`,
+        name: `This-repo-has-${star}-stars`,
     };
-    // let regu = /This-Repo-Has-\d-Stars/;
-    // if(regu.test(repo_name)) {
-    //     console.log("This is right name.");
-    // } else {
-    //     console.log("This is wrong name.");
-    // }
     reNameRepo(data);
 };
 
