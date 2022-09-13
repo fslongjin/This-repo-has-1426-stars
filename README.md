@@ -33,6 +33,7 @@ Implement this function in various programming languages.
 - [x] [Java](./java/)
 
 - [X] JavaScript
+  - [X] [JavaScript](./javascript/)
   - [X] [TypeScript](./typescript/)
   - [X] [with Deno](./deno-ts/)
 

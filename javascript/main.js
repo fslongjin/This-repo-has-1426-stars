@@ -1,4 +1,4 @@
-const { Octokit } =  require('octokit');
+const { Octokit } = require('octokit');
 require('dotenv').config();
 
 const octokit = new Octokit({
@@ -6,7 +6,7 @@ const octokit = new Octokit({
 });
 
 const getStar = async () => {
-    const rep = await octokit.request('GET /repositories/{repo_id}' , {
+    const rep = await octokit.request('GET /repositories/{repo_id}', {
         repo_id: process.env.repo_id,
     });
     const stars = rep.data.stargazers_count;
@@ -21,8 +21,8 @@ const reNameRepo = async (data) => {
     });
 };
 
-const checkStar = async (star)=> {
-    const rep = await octokit.request('GET /repositories/{repo_id}' , {
+const checkStar = async (star) => {
+    const rep = await octokit.request('GET /repositories/{repo_id}', {
         repo_id: process.env.repo_id,
     });
     const repo_name = rep.data.name;
@@ -32,4 +32,4 @@ const checkStar = async (star)=> {
     reNameRepo(data);
 };
 
-getStar().then(star=>checkStar(star));
+getStar().then(star => checkStar(star));
